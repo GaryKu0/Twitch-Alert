@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>twitch</title>
+        <script src="config.js"></script>
+        <script src="twitch.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <script>
+            window.onload = function() {
+                init();
+            };
+            //run get followers function every 5 seconds
+            setInterval(getFollowers, 5000);
+        </script>
+        <div id="main" class="main">
+
+        </div>
+    </body>
+</html>

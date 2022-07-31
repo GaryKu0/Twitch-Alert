@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji&family=Secular+One&display=swap');
+            @font-face {
+                font-family: 'SDK_SC_WEB';
+                src: url("../font/zh-cn.ttf") format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+            .main .alert:first-child{
+                animation: fade-left 0.5s cubic-bezier(.17,.67,.83,.67);
+            }
+            .alert{
+                min-width: 300px;
+                max-width: 350px;
+                height: 75px;
+                background-color: rgba(210, 210, 210, 0.5);
+                border-radius: 12px;
+                overflow: hidden;
+                display: flex;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                margin-top: 10px;
+            }
+            .pfp{
+                display: inline-block;
+            }
+            .text{
+                display: inline-block;
+                margin-left: 10px;
+            }
+            .text h3{
+                font-family: 'Secular One','Noto Emoji', sans-serif;
+                line-height: 0px;
+                color:#389948;
+            }
+            .text h2{
+                font-family: 'SDK_SC_WEB', sans-serif;
+                line-height: 10px;
+            }
+            @keyframes fade-left{
+                0%{
+                    opacity: 0;
+                    transform: translateX(-200px);
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }

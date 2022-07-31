@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Emoji&family=Secular+One&display=swap');
+            @font-face {
+                font-family: 'SDK_SC_WEB';
+                src: url("font/zh-cn.ttf") format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+            .alert{
+                width: 300px;
+                height: 75px;
+                background-color: rgba(194, 194, 194, 0.5);
+                border-radius: 12px;
+                overflow: hidden;
+                display: flex;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                animation: fade-left 0.5s cubic-bezier(.17,.67,.83,.67);
+            }
+            .pfp{
+                display: inline-block;
+            }
+            .text{
+                display: inline-block;
+                margin-left: 10px;
+            }
+            .text h3{
+                font-family: 'Secular One','Noto Emoji', sans-serif;
+                line-height: 0px;
+                color:#389948;
+            }
+            .text h1{
+                font-family: 'SDK_SC_WEB', sans-serif;
+                line-height: 10px;
+            }
+            @keyframes fade-left{
+                0%{
+                    opacity: 0;
+                    transform: translateX(-100px);
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
+        </style>
+        <div class="alert" ata-aos="fade-right">
+            <div class="pfp">
+                <img src="https://i.pinimg.com/236x/cc/50/ca/cc50cada4658669e26f818405cc7016b.jpg" alt="pfp" width=75" height="75">
+            </div>
+            <div class="text">
+                <h3>New Follower✨</h3>
+                <h1>John Doe</h1>
+            </div>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    </body>
+</html>
