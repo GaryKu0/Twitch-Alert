@@ -7,6 +7,9 @@
 This is just a easy sample using JavaScript to show twitch follower alert💩
 ![Cover](https://i.imgur.com/k2SdNyt.png)
 
+> **Warning**
+> Make sure all files stay in your local, you can easily leak your api key with this method!☠️
+
 ## 🦄Twitch API
 
 You can get it [here](https://dev.twitch.tv/console)
@@ -34,3 +37,5 @@ Open Config.js and set your twitch api and channel ID here
 ![twitchStudio-3](https://i.imgur.com/YD7qd1t.png)
 
 4.Done ✨
+
+
